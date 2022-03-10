@@ -6,8 +6,8 @@ import os
 import random
 
 app = FastAPI(
-    title = "HotBeverageAPI",
-    description="Gets a HotBeverage from the database. \n This what made by Michael twitter = https://twitter.com/Michaelrbparker ",
+    title = "wallpaperAPI",
+    description="Gets a wallpaper from the database. \n This what made by Michael twitter = https://twitter.com/Michaelrbparker ",
     version="0.1.0",
     license_info={
         "name": "MIT",
