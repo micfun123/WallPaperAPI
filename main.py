@@ -49,7 +49,7 @@ async def wallpaperjson(request: Request) -> JSONResponse:
 
 @app.get("/londonwallpaper")
 def londonwallpaper():
-    x = "static/wallpapers/{}".format(getRandomFile("static/wallpapers"))
+    x = "static/londonwallpaper/{}".format(getRandomFile("static/londonwallpaper"))
     return FileResponse(x)
     
 
