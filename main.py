@@ -8,7 +8,7 @@ import random
 app = FastAPI(
     title = "wallpaperAPI",
     description="Gets a wallpaper from the database. \n This what made by Michael twitter = https://twitter.com/Michaelrbparker ",
-    version="0.1.0",
+    version="0.0.2",
     license_info={
         "name": "MIT",
         "url": "https://opensource.org/licenses/MIT",
