@@ -47,6 +47,34 @@ async def wallpaperjson(request: Request) -> JSONResponse:
     return {'img_url': img_url}
 
 
+@app.get("/londonwallpaper")
+def londonwallpaper():
+    x = "static/londonwallpaper/{}".format(getRandomFile("static/londonwallpaper"))
+    return FileResponse(x)
+    
+
+
+@app.get('/json/londonwallpaper')
+async def londonwallpaperjson(request: Request) -> JSONResponse:
+    img = "londonwallpaper/{}".format(getRandomFile("static/londonwallpaper"))
+    img_url = request.url_for('static', path=img)
+    return {'img_url': img_url}
+
+@app.get("/Film_TV_Wallpaper")
+def film():
+    x = "static/film/{}".format(getRandomFile("static/film"))
+    return FileResponse(x)
+    
+
+
+@app.get('/json/Film_TV_Wallpaper')
+async def filmjson(request: Request) -> JSONResponse:
+    img = "film/{}".format(getRandomFile("static/film"))
+    img_url = request.url_for('static', path=img)
+    return {'img_url': img_url}
+
+
+
 
 
 
